@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>GuessNumber</title>
+        <link  rel="stylesheet" href="./css-game/style0.css" >
+
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Labrada:wght@300;400;500&family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+<div class="container">
+<h3>I am thinking of a number between 1 - 10!</h3>
+<h3>Can you guess it?</h3>
+
+<input type="text" placeholder="Num"
+id="guess"><br>
+<button onclick="play()" id="my_btn">GUESS</button>
+
+<p id="message1">No. Of Guesses: 0</p>
+<p id="message2">Guessed Numbers are: None</p>
+<p id="message3"></p>
+<br>
+<button id="btnRestart" disabled onclick="restart()">Play again!</button>
+
+</div>
+
+        <script src="./js-game/game.js"></script>
+ 
+    </body>
+</html>
